@@ -20,10 +20,7 @@ namespace AchrafApi.Test
             var service = new ServiceTeam();
             string aff = service.Affiche(serviceTeamMock.CalculMoyenneDeuxEtudiant(e1, e2));
             Assert.AreEqual("Moy is: 10", aff);
-
-
             var ss = Mock.Of<IServiceTeam>();
-            //var ss = Mock.Of<IServiceTeam>();
             Mock.Get(ss).Setup(d => d.CalculMoyenneDeuxEtudiant(e1, e2)).Returns(10);
         }
     }
