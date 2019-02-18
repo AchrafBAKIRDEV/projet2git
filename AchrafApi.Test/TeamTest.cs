@@ -23,6 +23,7 @@ namespace AchrafApi.Test
 
 
             var ss = Mock.Of<IServiceTeam>();
+            //var ss = Mock.Of<IServiceTeam>();
             Mock.Get(ss).Setup(d => d.CalculMoyenneDeuxEtudiant(e1, e2)).Returns(10);
         }
     }
