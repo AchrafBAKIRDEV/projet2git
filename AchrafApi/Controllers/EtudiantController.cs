@@ -34,6 +34,7 @@ namespace AchrafApi.Controllers
         [ResponseType(typeof(Etudiant))]
         public async Task<IHttpActionResult> GetEtudiant(int id)
         {
+            int x = 0;
             Etudiant e1;
             using (var service = new ServiceEtudiant())
             {
